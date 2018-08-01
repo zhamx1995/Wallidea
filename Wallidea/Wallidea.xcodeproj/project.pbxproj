@@ -16,6 +16,7 @@
 		7C6C9E5E2110A77C00C6404F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6C9E5C2110A77C00C6404F /* LaunchScreen.storyboard */; };
 		7C6C9E692110A77C00C6404F /* WallideaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C9E682110A77C00C6404F /* WallideaTests.swift */; };
 		7C6C9E742110A77C00C6404F /* WallideaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C9E732110A77C00C6404F /* WallideaUITests.swift */; };
+		7C6C9E8221114AD000C6404F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C9E8121114AD000C6404F /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7C6C9E6F2110A77C00C6404F /* WallideaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallideaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6C9E732110A77C00C6404F /* WallideaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallideaUITests.swift; sourceTree = "<group>"; };
 		7C6C9E752110A77C00C6404F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C6C9E8121114AD000C6404F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				7C6C9E5A2110A77C00C6404F /* Assets.xcassets */,
 				7C6C9E5C2110A77C00C6404F /* LaunchScreen.storyboard */,
 				7C6C9E5F2110A77C00C6404F /* Info.plist */,
+				7C6C9E8121114AD000C6404F /* MainViewController.swift */,
 			);
 			path = Wallidea;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				7C6C9E562110A77A00C6404F /* ViewController.swift in Sources */,
 				7C6C9E542110A77A00C6404F /* Scene.swift in Sources */,
 				7C6C9E502110A77A00C6404F /* AppDelegate.swift in Sources */,
+				7C6C9E8221114AD000C6404F /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
