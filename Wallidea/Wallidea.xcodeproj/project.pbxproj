@@ -10,13 +10,13 @@
 		7C6C9E502110A77A00C6404F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C9E4F2110A77A00C6404F /* AppDelegate.swift */; };
 		7C6C9E522110A77A00C6404F /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7C6C9E512110A77A00C6404F /* Scene.sks */; };
 		7C6C9E542110A77A00C6404F /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C9E532110A77A00C6404F /* Scene.swift */; };
-		7C6C9E562110A77A00C6404F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C9E552110A77A00C6404F /* ViewController.swift */; };
 		7C6C9E592110A77A00C6404F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6C9E572110A77A00C6404F /* Main.storyboard */; };
 		7C6C9E5B2110A77C00C6404F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C6C9E5A2110A77C00C6404F /* Assets.xcassets */; };
 		7C6C9E5E2110A77C00C6404F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6C9E5C2110A77C00C6404F /* LaunchScreen.storyboard */; };
 		7C6C9E692110A77C00C6404F /* WallideaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C9E682110A77C00C6404F /* WallideaTests.swift */; };
 		7C6C9E742110A77C00C6404F /* WallideaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C9E732110A77C00C6404F /* WallideaUITests.swift */; };
 		7C6C9E8221114AD000C6404F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C9E8121114AD000C6404F /* MainViewController.swift */; };
+		7C6C9E8421135F4400C6404F /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C9E8321135F4400C6404F /* ARViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 		7C6C9E4F2110A77A00C6404F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C6C9E512110A77A00C6404F /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
 		7C6C9E532110A77A00C6404F /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
-		7C6C9E552110A77A00C6404F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7C6C9E582110A77A00C6404F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C6C9E5A2110A77C00C6404F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C6C9E5D2110A77C00C6404F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		7C6C9E732110A77C00C6404F /* WallideaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallideaUITests.swift; sourceTree = "<group>"; };
 		7C6C9E752110A77C00C6404F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C6C9E8121114AD000C6404F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7C6C9E8321135F4400C6404F /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,12 +106,12 @@
 				7C6C9E4F2110A77A00C6404F /* AppDelegate.swift */,
 				7C6C9E512110A77A00C6404F /* Scene.sks */,
 				7C6C9E532110A77A00C6404F /* Scene.swift */,
-				7C6C9E552110A77A00C6404F /* ViewController.swift */,
 				7C6C9E572110A77A00C6404F /* Main.storyboard */,
 				7C6C9E5A2110A77C00C6404F /* Assets.xcassets */,
 				7C6C9E5C2110A77C00C6404F /* LaunchScreen.storyboard */,
 				7C6C9E5F2110A77C00C6404F /* Info.plist */,
 				7C6C9E8121114AD000C6404F /* MainViewController.swift */,
+				7C6C9E8321135F4400C6404F /* ARViewController.swift */,
 			);
 			path = Wallidea;
 			sourceTree = "<group>";
@@ -266,10 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C6C9E562110A77A00C6404F /* ViewController.swift in Sources */,
 				7C6C9E542110A77A00C6404F /* Scene.swift in Sources */,
 				7C6C9E502110A77A00C6404F /* AppDelegate.swift in Sources */,
 				7C6C9E8221114AD000C6404F /* MainViewController.swift in Sources */,
+				7C6C9E8421135F4400C6404F /* ARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

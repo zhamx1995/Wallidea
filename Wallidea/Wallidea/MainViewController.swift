@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import MobileCoreServices
+import AssetsLibrary
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
-    override func viewDidLoad() {
+	@IBOutlet weak var selectedImageView: UIImageView!
+	override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -21,11 +24,36 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 	
-	
 	@IBAction func toARKitButton(_ sender: Any) {
 		self.performSegue(withIdentifier: "ToARKit", sender: self)
 	}
 	
+	//choose the photo library
+	@IBAction func formAlbum(_sender:AnyObject){
+		if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
+			//initial the img controller
+			let picker = UIImagePickerController()
+			//setup the picker
+			picker.delegate = self
+			picker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+			
+			self.present(picker,animated:true,completion: {
+				() -> Void in
+			})
+		}else{
+			print("unable to choose the photo")
+		}
+	}
+	
+	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+		print(info)
+		let image = info[UIImagePickerControllerOriginalImage]as!UIImage
+		selectedImageView.image = image
+		picker.dismiss(animated: true, completion: {
+			() -> Void in
+		})
+	}
+    
     /*
     // MARK: - Navigation
 
@@ -35,5 +63,4 @@ class MainViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
