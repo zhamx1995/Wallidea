@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57EEBFB0211858690000961D /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EEBFAF211858680000961D /* SettingsTableViewController.swift */; };
 		7C6C9E502110A77A00C6404F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C9E4F2110A77A00C6404F /* AppDelegate.swift */; };
 		7C6C9E522110A77A00C6404F /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7C6C9E512110A77A00C6404F /* Scene.sks */; };
 		7C6C9E542110A77A00C6404F /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C9E532110A77A00C6404F /* Scene.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57EEBFAF211858680000961D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		7C6C9E4C2110A77A00C6404F /* Wallidea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallidea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6C9E4F2110A77A00C6404F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C6C9E512110A77A00C6404F /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				7C6C9E512110A77A00C6404F /* Scene.sks */,
 				7C6C9E532110A77A00C6404F /* Scene.swift */,
 				7C6C9E572110A77A00C6404F /* Main.storyboard */,
+				57EEBFAF211858680000961D /* SettingsTableViewController.swift */,
 				7C6C9E5A2110A77C00C6404F /* Assets.xcassets */,
 				7C6C9E5C2110A77C00C6404F /* LaunchScreen.storyboard */,
 				7C6C9E5F2110A77C00C6404F /* Info.plist */,
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C6C9E542110A77A00C6404F /* Scene.swift in Sources */,
+				57EEBFB0211858690000961D /* SettingsTableViewController.swift in Sources */,
 				7C6C9E502110A77A00C6404F /* AppDelegate.swift in Sources */,
 				7C6C9E8221114AD000C6404F /* MainViewController.swift in Sources */,
 				7C6C9E8421135F4400C6404F /* ARViewController.swift in Sources */,
