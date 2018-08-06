@@ -19,6 +19,8 @@ class ARViewController: UIViewController, ARSKViewDelegate {
 	var currentImageAnchor: ARAnchor!
 	var currentImageWidth: CGFloat!
 	var currentImageHeight: CGFloat!
+	var currentImage: UIImage!
+	var defaultImage = true
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -63,7 +65,11 @@ class ARViewController: UIViewController, ARSKViewDelegate {
 	func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
 		// Create and configure a node for the anchor added to the view's session.
 		currentImageAnchor = anchor
-		currentImageNode = SKSpriteNode(imageNamed: "idea")
+		if (defaultImage) {
+			currentImageNode = SKSpriteNode(imageNamed: "idea")
+		} else {
+			currentImageNode = SKSpriteNode(texture: SKTexture(image: currentImage))
+		}
 		currentImageNode.name = "idea"
 		currentImageWidth = currentImageNode.size.width
 		currentImageHeight = currentImageNode.size.height
