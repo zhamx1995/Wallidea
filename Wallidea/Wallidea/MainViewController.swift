@@ -13,6 +13,7 @@ import AssetsLibrary
 class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
 	@IBOutlet weak var selectedImageView: UIImageView!
+    var currentImage:UIImage!
 	override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -49,11 +50,18 @@ class MainViewController: UIViewController,UIImagePickerControllerDelegate,UINav
 		print(info)
 		let image = info[UIImagePickerControllerOriginalImage]as!UIImage
 		selectedImageView.image = image
+        currentImage=image
 		picker.dismiss(animated: true, completion: {
 			() -> Void in
 		})
 	}
-    
+    override func prepare(for segue:UIStoryboardSegue,sender:Any?){
+        if segue.identifier == "ToARKit"{
+            let arViewController = segue.destination as! ARViewController
+            arViewController.currentImage = currentImage
+            arViewController.defaultImage = false
+        }
+    }
     /*
     // MARK: - Navigation
 
